@@ -11,3 +11,11 @@ open.addEventListener(`click`, () => {
 close.addEventListener(`click`, () => {
   menu.classList.remove(`show-menu`);
 });
+
+window.addEventListener(`scroll`, () => {
+  let scroll = pageYOffset;
+  console.log(scroll);
+  if (scroll > 500) {
+    menu.classList.remove(`show-menu`);
+  }
+});

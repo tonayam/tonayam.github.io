@@ -125,6 +125,7 @@ nav .assit {
 }
 .show-menu {
   display: block;
+  position: fixed;
 }
 .mobile-nav .nav-items {
   display: flex;
