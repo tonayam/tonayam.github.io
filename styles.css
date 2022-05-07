@@ -574,8 +574,14 @@ footer a {
   }
 
   /* STYLES FOR NAVBAR (TABLET SCREENS) */
+  nav {
+    padding: 2%;
+  }
   .nav-items {
     display: none;
+  }
+  .mob-nav {
+    display: block;
   }
 
   /* SECTION FOUR STYLES (BIG SCREENS) */
@@ -664,10 +670,15 @@ footer a {
   }
 
   /* STYLES FOR NAVBAR (MOBILE SCREENS) */
+  nav {
+    margin: 5px 0;
+  }
   .nav-items {
     display: none;
   }
-
+  .mob-nav {
+    display: block;
+  }
   /* HEADER STYLES (BIG SCREENS) */
   header {
     color: white;
