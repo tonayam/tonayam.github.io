@@ -6,10 +6,12 @@ console.log(open);
 
 open.addEventListener(`click`, () => {
   menu.classList.add(`show-menu`);
+  open.style.display = `none`;
 });
 
 close.addEventListener(`click`, () => {
   menu.classList.remove(`show-menu`);
+  open.style.display = `block`;
 });
 
 window.addEventListener(`scroll`, () => {
@@ -17,5 +19,6 @@ window.addEventListener(`scroll`, () => {
   console.log(scroll);
   if (scroll > 500) {
     menu.classList.remove(`show-menu`);
+    open.style.display = `block`;
   }
 });

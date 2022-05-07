@@ -119,6 +119,7 @@ nav .assit {
 .mobile-nav {
   display: none;
   height: 100vh;
+  width: 100%;
   transition: 2s linear all;
   background: #ff6433;
   color: white;
@@ -334,12 +335,10 @@ header .box-2 {
 }
 .orange {
   width: 50%;
-  height: 50%;
-  position: absolute;
+  height: 100%;
   background: #ff6433;
-  left: 20%;
   color: white;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 .orange h3 {
   padding-top: 5rem;
@@ -640,12 +639,8 @@ footer a {
     height: 42vh;
   }
 
-  .orange {
-    height: 42%;
-  }
-
   .orange h3 {
-    padding-top: 1rem;
+    padding-top: 0rem;
   }
 
   /* STYLES FOR FOOTER (TABLET SCREENS) */
@@ -856,15 +851,15 @@ footer a {
 
   /* SECTION FOUR STYLES (MOBILE SCREENS) */
   .four .images {
-    height: 50vh;
+    height: 30vh;
   }
   .orange {
-    width: 70%;
-    height: 50%;
     padding: 0 1rem;
+    width: 60%;
   }
   .orange h3 {
     padding-top: 2rem;
+    font-size: 1.3rem;
   }
   .four .stats {
     grid-template-columns: repeat(2, 1fr);
@@ -877,7 +872,12 @@ footer a {
   .stat img {
     width: 80%;
   }
-
+  .orange .orange-btn {
+    margin-top: 1rem;
+    width: 120px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
   /* SECTION FIVE STYLES (MOBILE SCREENS) */
   .five {
     padding-top: 15%;
@@ -975,5 +975,33 @@ footer a {
     width: 100%;
     font-size: 11px;
     transition: transform 0.3s linear;
+  }
+}
+@media screen and (width: 425px) {
+  /* SECTION FOUR STYLES (MOBILE SCREENS) */
+  .four .images {
+    height: 43vh;
+  }
+  .orange {
+    padding: 0 1rem;
+    width: 60%;
+  }
+  .orange h3 {
+    padding-top: 0rem;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  /* SECTION FOUR STYLES (MOBILE SCREENS) */
+  .four .images {
+    height: 42vh;
+  }
+  .orange {
+    padding: 0 1rem;
+    width: 60%;
+  }
+  .orange h3 {
+    padding-top: 0rem;
+    font-size: 1.3rem;
   }
 }
