@@ -542,15 +542,18 @@ footer li:hover {
     width: 100%;
   }
 
-  /* STYLES FOR NAVBAR (MOBILE SCREENS) */
+  /* STYLES FOR NAVBAR (TABLET SCREENS) */
   .nav-items {
     display: none;
   }
+
+  /* STYLES FOR NAVBAR (TABLET SCREENS) */
   footer {
     height: 100vh;
   }
   footer .top {
     height: 80%;
+    padding-top: 1rem;
   }
   footer .bottom {
     height: 20%;
