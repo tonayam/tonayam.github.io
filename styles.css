@@ -102,6 +102,56 @@ nav .assit {
   height: 30px;
   width: 30px;
   display: none;
+  animation: bounce 1s infinite linear;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* MOBILE NAVIGATION */
+.mobile-nav {
+  display: none;
+  height: 100vh;
+  transition: 2s linear all;
+  background: #ff6433;
+  color: white;
+}
+.show-menu {
+  display: block;
+}
+.mobile-nav .nav-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.mobile-nav ul {
+  display: block;
+  padding-left: 1rem;
+}
+.mobile-nav li {
+  padding: 2rem 0.5rem;
+}
+.mobile-nav #services,
+#home {
+  animation: bounce 2s infinite linear;
+}
+.close {
+  width: 7%;
+  margin: 1rem;
+  animation: bounce 1s infinite linear;
+}
+.close img {
+  width: 100%;
+}
+.mobile-nav a {
+  color: #ffffff;
 }
 /* HEADER STYLES (BIG SCREENS) */
 header {
