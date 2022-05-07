@@ -47,6 +47,9 @@ li {
   margin: 0 1rem;
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
 /* ORANGE BUTTON */
 .orange-btn {
   background: #ff6433;
@@ -82,7 +85,14 @@ nav {
   align-items: center;
   padding-top: 1rem;
 }
-
+nav a {
+  color: black;
+}
+.mob-nav {
+  height: 30px;
+  width: 30px;
+  display: none;
+}
 /* HEADER STYLES (BIG SCREENS) */
 header {
   width: 100%;
@@ -269,11 +279,9 @@ header .box-2 {
   color: white;
   padding: 0 4rem;
 }
-
 .orange h3 {
-  margin-top: 5rem;
+  padding-top: 5rem;
 }
-
 .orange .orange-btn {
   background: #1e1b1b;
 }
@@ -431,23 +439,22 @@ header .box-2 {
 /* FOOTER STYLES (LARGE SCREENS) */
 footer {
   width: 100%;
-  height: 100vh;
 }
 footer .top {
   background: #1e1b1b;
   opacity: 0.98;
-  padding-top: 3rem;
-  height: 80%;
+  padding-top: 0rem;
 }
 footer .top .content {
   width: 80%;
   height: 100%;
-  margin: 3rem auto;
+  margin: 0 auto;
   color: #ffffff;
 }
 
 .content h3 {
   padding: 5% 10%;
+  padding-top: 10%;
 }
 .content .icons {
   padding-left: 10%;
@@ -467,7 +474,6 @@ footer .right .info {
   color: #ffffff;
 }
 footer .bottom {
-  height: 20%;
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: #1e1b1b;
@@ -483,9 +489,23 @@ footer li {
 footer li:hover {
   transform: scale(1.1);
 }
-
+footer a {
+  color: white;
+}
 /* TABLET SCREEN SIZE */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
+  /* 10% PADDING (LEFT/RIGHT) FOR LARGE SCREENS */
+  .pad {
+    padding: 2% 2%;
+  }
+
+  /* NAV STYLES */
+  .nav-items {
+    display: none;
+  }
+  .mob-nav {
+    display: block;
+  }
   /* HEADER STYLES (BIG SCREENS) */
   header {
     color: white;
@@ -547,9 +567,22 @@ footer li:hover {
     display: none;
   }
 
-  /* STYLES FOR NAVBAR (TABLET SCREENS) */
+  /* SECTION FOUR STYLES (BIG SCREENS) */
+  .four .images {
+    height: 42vh;
+  }
+
+  .orange {
+    height: 42%;
+  }
+
+  .orange h3 {
+    padding-top: 1rem;
+  }
+
+  /* STYLES FOR FOOTER (TABLET SCREENS) */
   footer {
-    height: 100vh;
+    /* height: 100vh; */
   }
   footer .top {
     height: 80%;
@@ -683,7 +716,7 @@ footer li:hover {
   /* SECTION ONE STYLES (MOBILE SCREENS) */
   .one .left {
     padding: 4.5rem 1rem 0 0;
-    height: 70vh;
+    height: inherit;
   }
 
   .services .text p {
@@ -732,7 +765,8 @@ footer li:hover {
 
   /* SECTION THREE STYLES (MOBILE SCREENS) */
   .three {
-    padding-top: 3rem;
+    padding-top: 15%;
+    padding-bottom: 15%;
   }
   .three .icons {
     grid-template-columns: repeat(2, 1fr);
@@ -749,22 +783,20 @@ footer li:hover {
 
   /* SECTION FOUR STYLES (MOBILE SCREENS) */
   .four .images {
-    height: 40vh;
+    height: 50vh;
   }
   .orange {
     width: 70%;
-    height: 40%;
-    position: absolute;
-    background: #ff6433;
-    left: 20%;
-    color: white;
+    height: 50%;
     padding: 0 1rem;
   }
   .orange h3 {
-    margin-top: 4rem;
+    padding-top: 2rem;
   }
   .four .stats {
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
   .stats .stat {
     margin: 1rem;
@@ -774,6 +806,10 @@ footer li:hover {
   }
 
   /* SECTION FIVE STYLES (MOBILE SCREENS) */
+  .five {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
   .five h3 {
     padding-top: 10%;
   }
@@ -782,6 +818,10 @@ footer li:hover {
   }
 
   /* SECTION SIX STYLES (MOBILE SCREENS) */
+  .six {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
   .six h3 {
     padding: 0rem;
     padding-top: 10%;
@@ -815,6 +855,10 @@ footer li:hover {
     display: none;
   }
   /* SECTION SEVEN STYLES (MOBILE SCREENS) */
+  .seven {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
   .seven h3 {
     padding-top: 10%;
   }
@@ -839,6 +883,7 @@ footer li:hover {
   /* FOOTER SEVEN STYLES (MOBILE SCREENS) */
   .content h3 {
     padding: 5% 0;
+    padding-top: 5%;
   }
   .content .icons {
     padding-left: 0;
@@ -851,7 +896,7 @@ footer li:hover {
   }
   footer ul {
     width: 100%;
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
   }
   footer li {
     width: 100%;
