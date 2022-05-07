@@ -88,6 +88,16 @@ nav {
 nav a {
   color: black;
 }
+nav #assistance {
+  position: relative;
+  top: -10px;
+}
+nav .assit {
+  display: flex;
+}
+.assit img {
+  padding-right: 0.5rem;
+}
 .mob-nav {
   height: 30px;
   width: 30px;
@@ -122,6 +132,7 @@ header .box-2 {
   background-size: 140%;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 10%;
 }
 .offers {
   display: none;

@@ -51,6 +51,9 @@ li {
   margin: 0 1rem;
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
 /* ORANGE BUTTON */
 .orange-btn {
   background: #ff6433;
@@ -90,7 +93,19 @@ nav {
   align-items: center;
   padding-top: 1rem;
 }
-
+nav #assistance {
+  position: relative;
+  top: -10px;
+}
+nav .assit {
+  display: flex;
+}
+.assit img {
+  padding-right: 0.5rem;
+}
+nav a {
+  color: black;
+}
 /* HEAADER STYLES (LARGE SCREENS) */
 header {
   padding-bottom: 10%;
@@ -114,7 +129,7 @@ header .img {
 }
 .black {
   width: 50%;
-  height: 45%;
+  height: 42.5%;
   position: absolute;
   background: #1e1b1b;
   left: 40%;
@@ -225,9 +240,7 @@ footer .top {
   background: #1e1b1b;
   opacity: 0.98;
   padding-top: 1rem;
-  /* padding-bottom: 3rem; */
   height: 80%;
-  border: 2px solid red;
 }
 footer .top .content {
   width: 80%;
@@ -273,6 +286,9 @@ footer li {
 footer li:hover {
   transform: scale(1.1);
 }
+footer a {
+  color: white;
+}
 
 /* TABLET SCREEN SIZE */
 @media screen and (max-width: 800px) {
@@ -308,6 +324,10 @@ footer li:hover {
   li {
     margin: 0rem;
     cursor: pointer;
+  }
+  /* MOBILE NAV (FOR TABLET SCREENS) */
+  .mob-nav {
+    display: block;
   }
   /* HEADER STYLES (BIG SCREENS) */
   header .img {
