@@ -103,6 +103,7 @@ nav .assit {
   width: 30px;
   display: none;
   animation: bounce 1s infinite linear;
+  cursor: pointer;
 }
 @keyframes bounce {
   0% {
@@ -148,6 +149,7 @@ nav .assit {
   width: 7%;
   margin: 1rem;
   animation: bounce 1s infinite linear;
+  cursor: pointer;
 }
 .close img {
   width: 100%;
@@ -352,6 +354,8 @@ header .box-2 {
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
   width: 80%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 .stats p {
   margin-top: 0.5rem;
@@ -641,12 +645,10 @@ footer a {
 
   .orange h3 {
     padding-top: 0rem;
+    font-size: 1.2rem;
   }
 
   /* STYLES FOR FOOTER (TABLET SCREENS) */
-  footer {
-    /* height: 100vh; */
-  }
   footer .top {
     height: 80%;
     padding-top: 1rem;

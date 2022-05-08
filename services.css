@@ -90,6 +90,7 @@ a {
   width: 30px;
   display: none;
   margin: 0.5rem 1rem;
+  cursor: pointer;
 }
 /* MOBILE NAVIGATION */
 .mobile-nav {
@@ -124,6 +125,7 @@ a {
   width: 7%;
   margin: 1rem;
   animation: bounce 1s infinite linear;
+  cursor: pointer;
 }
 .close img {
   width: 100%;
